@@ -1,4 +1,6 @@
 #!/bin/bash
+# Usage: dir_comparison.sh <Path>
+# Run twice to see what changed in the directory between the two runs
 directoryToWatch=$1
 if [ ! -e /tmp/dirlist1.txt ]
 then
