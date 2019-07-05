@@ -1,4 +1,5 @@
 #!/bin/bash
+# Usage: device_monitor.sh <path> <checkIntervalInSeconds>
 function getCurrentDiskUsage() {
   path=$1
   echo $(df $path | grep $path | awk '{print $4}')
